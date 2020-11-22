@@ -12,7 +12,7 @@ const Main = () => {
 
     return (
         <>
-            <Tab.Navigator>
+            <Tab.Navigator screenOptions initialRouteName="Home" screenOptions={{ headerTitleStyle: { fontFamily: 'Ubuntu-Regular', fontWeight: 'bold' } }}>
                 <Tab.Screen name="Home" component={Home} />
                 <Tab.Screen name="Spotify" component={Spotify} />
                 <Tab.Screen name="Soundcloud" component={Soundcloud} />

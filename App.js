@@ -32,7 +32,7 @@ const App = () => {
     <>
       <StatusBar barStyle="default" translucent backgroundColor="transparent" />
       <NavigationContainer>        
-        <Stack.Navigator initialRouteName="Main">
+        <Stack.Navigator initialRouteName="Main" screenOptions={{ headerTitleStyle: { fontFamily: 'Ubuntu-Regular', fontWeight: 'bold' } }}>
         <Stack.Screen
             name="Login"
             component={Login}
@@ -49,7 +49,7 @@ const App = () => {
             options={{
               title: 'Bienvenido(a)',
               headerShown: true,
-              headerTitleAlign: 'center',
+              headerTitleAlign: 'center',              
             }}
           />
 

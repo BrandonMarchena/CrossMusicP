@@ -35,6 +35,12 @@
 		02D51C68A8C042669AC38CFC /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29CEECE98A3F4155B96189D0 /* rubicon-icon-font.ttf */; };
 		2C7F30546B544FD693CBFB26 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0F49EE9A8BB43AAAC929659 /* SimpleLineIcons.ttf */; };
 		75ED14FD5A214DCBADA8C432 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8805E0FFBCB24E7F9EF9ED83 /* Zocial.ttf */; };
+		CD4ACC30A7CC499985291AAD /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3EAC9DAAA3442A19AA24133 /* Ubuntu-Regular.ttf */; };
+		7CB6926CDCED4391991CDA39 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 199756C397A34D1DAF47048E /* Abel-Regular.ttf */; };
+		9922744CFF6D41EB8A1ADDDC /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA7E3434DCD64F79AD3E1E9E /* BarlowSemiCondensed-Medium.ttf */; };
+		AEF29E3F4DFC42B4BD857D77 /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 517AC7BCA9324FF1B1F9B8A0 /* BarlowSemiCondensed-Regular.ttf */; };
+		7C15066E27054F71B7AE7B58 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1DB3D19D12411C8820AC5E /* Oswald-Regular.ttf */; };
+		FD781438BA9B4654B5264A7E /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33ECC0FA799D41CB993FDC16 /* Oswald-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,12 @@
 		29CEECE98A3F4155B96189D0 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C0F49EE9A8BB43AAAC929659 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		8805E0FFBCB24E7F9EF9ED83 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B3EAC9DAAA3442A19AA24133 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Regular.ttf"; path = "../assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		199756C397A34D1DAF47048E /* Abel-Regular.ttf */ = {isa = PBXFileReference; name = "Abel-Regular.ttf"; path = "../assets/fonts/Abel-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA7E3434DCD64F79AD3E1E9E /* BarlowSemiCondensed-Medium.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Medium.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		517AC7BCA9324FF1B1F9B8A0 /* BarlowSemiCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "BarlowSemiCondensed-Regular.ttf"; path = "../assets/fonts/BarlowSemiCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B1DB3D19D12411C8820AC5E /* Oswald-Regular.ttf */ = {isa = PBXFileReference; name = "Oswald-Regular.ttf"; path = "../assets/fonts/Oswald-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33ECC0FA799D41CB993FDC16 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Oswald-VariableFont_wght.ttf"; path = "../assets/fonts/Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +230,12 @@
 				29CEECE98A3F4155B96189D0 /* rubicon-icon-font.ttf */,
 				C0F49EE9A8BB43AAAC929659 /* SimpleLineIcons.ttf */,
 				8805E0FFBCB24E7F9EF9ED83 /* Zocial.ttf */,
+				B3EAC9DAAA3442A19AA24133 /* Ubuntu-Regular.ttf */,
+				199756C397A34D1DAF47048E /* Abel-Regular.ttf */,
+				CA7E3434DCD64F79AD3E1E9E /* BarlowSemiCondensed-Medium.ttf */,
+				517AC7BCA9324FF1B1F9B8A0 /* BarlowSemiCondensed-Regular.ttf */,
+				5B1DB3D19D12411C8820AC5E /* Oswald-Regular.ttf */,
+				33ECC0FA799D41CB993FDC16 /* Oswald-VariableFont_wght.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -380,6 +398,12 @@
 				02D51C68A8C042669AC38CFC /* rubicon-icon-font.ttf in Resources */,
 				2C7F30546B544FD693CBFB26 /* SimpleLineIcons.ttf in Resources */,
 				75ED14FD5A214DCBADA8C432 /* Zocial.ttf in Resources */,
+				CD4ACC30A7CC499985291AAD /* Ubuntu-Regular.ttf in Resources */,
+				7CB6926CDCED4391991CDA39 /* Abel-Regular.ttf in Resources */,
+				9922744CFF6D41EB8A1ADDDC /* BarlowSemiCondensed-Medium.ttf in Resources */,
+				AEF29E3F4DFC42B4BD857D77 /* BarlowSemiCondensed-Regular.ttf in Resources */,
+				7C15066E27054F71B7AE7B58 /* Oswald-Regular.ttf in Resources */,
+				FD781438BA9B4654B5264A7E /* Oswald-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
