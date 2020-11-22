@@ -1,11 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   SafeAreaView,
@@ -13,102 +6,81 @@ import {
   ScrollView,
   View,
   Text,
-  StatusBar,
+  StatusBar,  
 } from 'react-native';
+import {Button, Icon} from 'native-base';
+import {useNavigation} from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Main from './views/Main';
+import Login from './views/Login';
+import Settings from './views/Settings';
 
-const App: () => React$Node = () => {
+
+
+const App = () => {
+
+  //Instanciando Stack para el Uso de la Navegacion tipo Stack (React Navigation)
+  const Stack = createStackNavigator();
+
+  //Redireccionar
+  //const navigation = useNavigation();
+
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+      <StatusBar barStyle="default" translucent backgroundColor="transparent" />
+      <NavigationContainer>        
+        <Stack.Navigator initialRouteName="Main">
+        <Stack.Screen
+            name="Login"
+            component={Login}
+            options={{
+              title: 'Iniciar Sesión',
+              headerShown: false,
+              headerTitleAlign: 'center',              
+            }}
+          />
+
+          <Stack.Screen
+            name="Main"
+            component={Main}
+            options={{
+              title: 'Bienvenido(a)',
+              headerShown: true,
+              headerTitleAlign: 'center',
+            }}
+          />
+
+          <Stack.Screen
+            name="Settings"
+            component={Settings}
+            options={{
+              title: 'Configuraciones',
+              headerShown: true,
+              headerTitleAlign: 'center',              
+            }}
+          />         
+
+          {/* <Stack.Screen
+            name="CrearCuenta"
+            component={CrearCuenta}
+            options={{
+              title: 'Crear Cuenta',
+              headerStyle: {
+                backgroundColor: '#0D41A9',
+              },
+              headerTintColor: '#FFF',
+              headerTitleAlign: 'center',
+            }}
+          /> */}
+        </Stack.Navigator>
+      </NavigationContainer>      
     </>
   );
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+const styles = StyleSheet.create({});
 
 export default App;

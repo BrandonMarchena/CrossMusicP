@@ -1,0 +1,4 @@
+{
+ "cliente": "7f0feab15af7491d82cc1b06e97b581d",
+ "cliente-sercret": "efa7d2c000e343598b3e54668687d33"
+}

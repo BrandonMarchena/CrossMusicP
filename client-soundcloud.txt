@@ -1,0 +1,5 @@
+{
+"client_id": "njlDi9nZVS8dM70mLDjJpD8PascrK3xJ",
+"app_version": "1605795845",
+"app_locale": "es"
+}
